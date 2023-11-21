@@ -27,3 +27,6 @@ subscription_id = "69dd90d1-d145-429d-98e6-6ea267c3d5c4"
     key                  = "terraform.tfstate"
     use_azuread_auth     = "true"
   }
+provider "azurerm" {
+  features {}
+}
