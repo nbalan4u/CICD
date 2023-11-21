@@ -19,12 +19,11 @@ client_secret = "Ia28Q~hIVM~fs9esmi5_YYRpmeybGkxnBJ4YKcOI"
 tenant_id = "4290e7da-7cb6-4993-87c4-4e8cf3315bba"
 subscription_id = "69dd90d1-d145-429d-98e6-6ea267c3d5c4"
 }
-#terraform {
- # backend "azurerm" {
-  #  resource_group_name  = "Test_RG"
-   # storage_account_name = "teststrgact555"
-    #container_name       = "tfstate"
-    # key                  = "/hcsc_APP00046507_nph_nc/hcsc_APP00046507_nph_nc_on_sql_server_test1.tfstate"
-    #use_azuread_auth     = "true"
-  #}
-#}
+
+    backend "azurerm" {
+    resource_group_name  = "Test_RG"
+    storage_account_name = "teststrgact555"
+    container_name       = "tfstate"
+    key                  = "terraform.tfstate"
+    use_azuread_auth     = "true"
+  }
