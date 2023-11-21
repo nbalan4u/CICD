@@ -19,7 +19,7 @@ client_secret = "Ia28Q~hIVM~fs9esmi5_YYRpmeybGkxnBJ4YKcOI"
 tenant_id = "4290e7da-7cb6-4993-87c4-4e8cf3315bba"
 subscription_id = "69dd90d1-d145-429d-98e6-6ea267c3d5c4"
 
-    backend "azurerm" {
+    backend "remote" {
     resource_group_name  = "Test_RG"
     storage_account_name = "teststrgact555"
     container_name       = "tfstate"
